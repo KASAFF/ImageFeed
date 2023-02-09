@@ -7,21 +7,16 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+final class ProfileViewController: UIViewController {
 
-    lazy var profileImageView: UIImageView = {
+    private lazy var profileImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.image = UIImage(named: "avatar")
-        NSLayoutConstraint.activate([
-            imageView.heightAnchor.constraint(equalToConstant: 70),
-            imageView.widthAnchor.constraint(equalToConstant: 70)
-        ])
-
         return imageView
     }()
 
-    lazy var logoutButton: UIButton = {
+    private lazy var logoutButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setBackgroundImage(UIImage(named: "logoutButton"), for: .normal)
@@ -29,7 +24,7 @@ class ProfileViewController: UIViewController {
         return button
     }()
 
-    let nameLabel: UILabel = {
+    private lazy var nameLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Имя Фамилия"
@@ -38,7 +33,7 @@ class ProfileViewController: UIViewController {
         return label
     }()
 
-    let tagLabel: UILabel = {
+    private lazy var tagLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "@tagId"
@@ -47,7 +42,7 @@ class ProfileViewController: UIViewController {
         return label
     }()
 
-    let descriptionLabel: UILabel = {
+    private lazy var descriptionLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Hello, World!"
@@ -59,8 +54,6 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-
-
     }
 
     private func addSubviews() {
@@ -76,6 +69,8 @@ class ProfileViewController: UIViewController {
         NSLayoutConstraint.activate([
             profileImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             profileImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 76),
+            profileImageView.heightAnchor.constraint(equalToConstant: 70),
+            profileImageView.widthAnchor.constraint(equalToConstant: 70),
 
             nameLabel.leadingAnchor.constraint(equalTo: profileImageView.leadingAnchor),
             nameLabel.topAnchor.constraint(equalTo: profileImageView.bottomAnchor, constant: 8),
@@ -91,11 +86,7 @@ class ProfileViewController: UIViewController {
         ])
     }
 
-    @objc func logoutButtonTapped() {
+    @objc private func logoutButtonTapped() {
         print("Logging out")
     }
-
-    
-
-
 }
