@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AB0DB16C299128B800D4010B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DB16B299128B800D4010B /* ProfileViewController.swift */; };
-		AB0DB16E2991356F00D4010B /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DB16D2991356F00D4010B /* UIImage+Extension.swift */; };
 		AB15F4342981DDCF00490A46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB15F4332981DDCF00490A46 /* AppDelegate.swift */; };
 		AB15F4362981DDCF00490A46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB15F4352981DDCF00490A46 /* SceneDelegate.swift */; };
 		AB15F4382981DDCF00490A46 /* ImagesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB15F4372981DDCF00490A46 /* ImagesListViewController.swift */; };
@@ -22,7 +21,6 @@
 
 /* Begin PBXFileReference section */
 		AB0DB16B299128B800D4010B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		AB0DB16D2991356F00D4010B /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		AB15F4302981DDCF00490A46 /* ImageFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB15F4332981DDCF00490A46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB15F4352981DDCF00490A46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,13 +68,12 @@
 				AB15F4332981DDCF00490A46 /* AppDelegate.swift */,
 				AB15F4352981DDCF00490A46 /* SceneDelegate.swift */,
 				AB0DB16B299128B800D4010B /* ProfileViewController.swift */,
+				ABA4D096299274B5001020B9 /* SingleImageViewController.swift */,
 				AB879CAA29829F2600649A87 /* ImagesList */,
 				AB15F4392981DDCF00490A46 /* Main.storyboard */,
-				AB0DB16D2991356F00D4010B /* UIImage+Extension.swift */,
 				AB15F43C2981DDD100490A46 /* Assets.xcassets */,
 				AB15F43E2981DDD100490A46 /* LaunchScreen.storyboard */,
 				AB15F4412981DDD100490A46 /* Info.plist */,
-				ABA4D096299274B5001020B9 /* SingleImageViewController.swift */,
 			);
 			path = ImageFeed;
 			sourceTree = "<group>";
@@ -162,7 +159,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB0DB16C299128B800D4010B /* ProfileViewController.swift in Sources */,
-				AB0DB16E2991356F00D4010B /* UIImage+Extension.swift in Sources */,
 				AB15F4382981DDCF00490A46 /* ImagesListViewController.swift in Sources */,
 				AB879CA929829F1F00649A87 /* ImagesListCell.swift in Sources */,
 				AB15F4342981DDCF00490A46 /* AppDelegate.swift in Sources */,
